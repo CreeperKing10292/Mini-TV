@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini TV — Raspberry Pi MP4 Music Player</title>
+  <meta name="description" content="Mini TV: a Raspberry Pi-powered mini player with a 2-inch TFT and speaker-first body. Plug-in desk device." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-theme="light">
+  <header class="topbar" aria-label="Site navigation">
+    <div class="topbar__inner">
+      <a class="brand" href="" aria-label="Mini TV Home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Mini TV</span>
+      </a>
+
+      <nav class="nav nav--desktop" aria-label="Primary">
+        <a class="nav__link" href="">Home</a>
+        <a class="nav__link" href="hardware.html">Hardware</a>
+        <a class="nav__link" href="about.html">About This Page</a>
+        <a class="nav__link" href="team.html">The Team</a>
+      </nav>
+
+      <button class="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="navToggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="navPanel" hidden>
+      <nav class="nav nav--mobile" aria-label="Mobile">
+        <a class="nav__link" href="">Home</a>
+        <a class="nav__link" href="hardware.html">Hardware</a>
+        <a class="nav__link" href="about.html">About This Page</a>
+        <a class="nav__link" href="team.html">The Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="page">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">Raspberry Pi • Plugged-in desk device</p>
+          <h1 class="headline">Mini TV</h1>
+          <p class="subhead">
+            A rectangular mini player where most of the body is a speaker,
+            with a small <strong>2-inch TFT</strong> on the front.
+            Built for local files, simple controls, and always-ready playback.
+            Here's a hero render:
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn" href="hardware.html">Hardware involved</a>
+            <a class="btn btn--ghost" href="about.html">About us</a>
+          </div>
+        </div>
+
+        <div class="hero__media" aria-label="Hero image placeholder">
+          <div class="mediaFrame">
+            <img src="assets/spooder-man.jpg" alt="spooder-man" width="100%" height="100%" class="hero_media">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- This is the ONLY trigger point for theme shift -->
+    <section id="overview" class="band">
+      <div class="container">
+        <h2 class="sectionTitle">Brief overview</h2>
+        <p class="sectionLead">
+          Mini TV is a small, plug-in media player: boot straight into a clean minimal system,
+          browse a local library present directly on the Raspberry Pi, and play songs/videos.
+          No cloud. No distractions.
+        </p>
+
+        <div class="featureRow">
+          <div class="feature">
+            <div class="feature__title">Speaker-first</div>
+            <div class="feature__text">Enclosure volume goes to sound. The screen stays small and purposeful.</div>
+          </div>
+          <div class="feature">
+            <div class="feature__title">2&quot; TFT</div>
+            <div class="feature__text">Track info, video playback, and navigation—made for tiny pixels.</div>
+          </div>
+          <div class="feature">
+            <div class="feature__title">Plugged-in</div>
+            <div class="feature__text">Designed to live on a desk using USB 5V power.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="design" class="band">
+      <div class="container split">
+        <div>
+          <h2 class="sectionTitle">Minimal design</h2>
+          <p class="sectionLead">
+            A calm rectangle. A small screen window. A clean speaker face.
+            Buttons are only what you need.
+          </p>
+          <ul class="bullets">
+            <li>Front: speaker cutout + TFT window</li>
+            <li>Side: power + push buttons</li>
+            <li>subtle venting and a handy cable path</li>
+          </ul>
+        </div>
+
+        <div class="imagePlaceholder" aria-label="Design image placeholder">
+          <div class="imagePlaceholder__label">Design / Layout Image Placeholder</div>
+          <div class="imagePlaceholder__hint">Exploded view, faceplate sketch, or CAD render</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hardware" class="band">
+      <div class="container">
+        <h2 class="sectionTitle">Hardware direction</h2>
+        <p class="sectionLead">
+          Built around a Raspberry Pi (model placeholder). Boot to a system ready when you are.
+          Output audio to teh built in amp + speaker.
+        </p>
+
+        <div class="twoCol">
+          <div class="specLine"><span class="specLine__k">Compute</span><span class="specLine__v">Raspberry Pi 5</span></div>
+          <div class="specLine"><span class="specLine__k">Power</span><span class="specLine__v">USB 5V (plugged-in)</span></div>
+          <div class="specLine"><span class="specLine__k">Display</span><span class="specLine__v">2&quot; TFT </span></div>
+          <div class="specLine"><span class="specLine__k">Storage</span><span class="specLine__v">16GB microSD</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="next" class="band">
+      <div class="container">
+        <h2 class="sectionTitle">What’s next</h2>
+        <p class="sectionLead">
+          This is the home page—so the details live elsewhere.
+          Next up: the list of compenents, hardware, and the team.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn" href="hardware.html" aria-disabled="true">Hardware</a>
+          <a class="btn btn--ghost" href="team.html" aria-disabled="true">The Team</a>
+        </div>
+
+        <footer class="footer">© <span id="year"></span> Mini TV Project</footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

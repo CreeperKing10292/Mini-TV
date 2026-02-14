@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini TV — Hardware</title>
+  <meta name="description" content="Mini TV hardware overview: Raspberry Pi, display, audio chain, power, and enclosure notes." />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module"
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js">
+  </script>
+</head>
+
+<body data-theme="light">
+  <!-- Sticky translucent nav -->
+  <header class="topbar" aria-label="Site navigation">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html" aria-label="Mini TV Home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Mini TV</span>
+      </a>
+
+      <nav class="nav nav--desktop" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="hardware.html">Hardware</a>
+        <a class="nav__link" href="about.html">About This Page</a>
+        <a class="nav__link" href="team.html">The Team</a>
+      </nav>
+
+      <button class="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="navToggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="navPanel" hidden>
+      <nav class="nav nav--mobile" aria-label="Mobile">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="hardware.html">Hardware</a>
+        <a class="nav__link" href="about.html">About This Page</a>
+        <a class="nav__link" href="team.html">The Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="page">
+    <!-- HERO (light) -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">Hardware page</p>
+          <h1 class="headline">Built on a Raspberry Pi</h1>
+          <p class="subhead">
+            Mini TV is a plug-in device: the Pi boots directly into a fullscreen UI, reads a local library
+            (microSD/USB placeholder), and outputs audio to an amplifier + speaker. This page captures the
+            hardware direction and decisions.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn" href="#overview">Architecture</a>
+            <a class="btn btn--ghost" href="#components">Components</a>
+          </div>
+        </div>
+
+        <div class="hero__media" aria-label="Hardware hero placeholder">
+          <div class="mediaFrame">
+            <div class="mediaFrame__label">Hardware Diagram Placeholder</div>
+            <div class="mediaFrame__hint">
+              Block diagram / wiring overview / internal layout render
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW (this is the latch flip trigger) -->
+    <section id="overview" class="band">
+      <div class="container">
+        <h2 class="sectionTitle">Architecture</h2>
+        <p class="sectionLead">
+          The core idea is simple: <strong>Raspberry Pi → UI → media playback → audio amp → speaker</strong>.
+          Keep ports serviceable (power + storage), keep heat managed, and keep the screen legible.
+        </p>
+
+        <div class="featureRow">
+          <div class="feature">
+            <div class="feature__title">Compute</div>
+            <div class="feature__text">
+              Placeholder: Pi model choice, OS image, kiosk boot, startup time goals.
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__title">Display path</div>
+            <div class="feature__text">
+              Placeholder: TFT driver/interface (SPI/parallel), mounting, brightness, viewing angle.
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__title">Audio path</div>
+            <div class="feature__text">
+              Placeholder: DAC (optional) → amplifier → speaker; noise isolation + grounding notes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN NOTES (stays dark after latch) -->
+    <section id="decisions" class="band">
+      <div class="container split">
+        <div>
+          <h2 class="sectionTitle">Key decisions</h2>
+          <p class="sectionLead">
+            Document tradeoffs early so the build stays consistent. Keep it simple, serviceable, and repeatable.
+          </p>
+          <ul class="bullets">
+            <li>Power: USB 5V (plug-in) — placeholder adapter rating and cable management</li>
+            <li>Thermals: airflow/venting and safe placement of the amplifier</li>
+            <li>Storage: microSD vs USB drive (library size and reliability)</li>
+            <li>Controls: buttons vs rotary encoder; debounce + ergonomics</li>
+          </ul>
+        </div>
+
+          <div class="mediaFrame">
+            <dotlottie-wc
+                src="https://lottie.host/1e29a5a7-6336-427a-814a-cf5da4dfb732/loF81BcaVN.lottie"
+                autoplay
+                loop
+                class="lottieAnim">
+            </dotlottie-wc>
+            </div>
+      </div>
+    </section>
+
+    <!-- SPECS (placeholder) -->
+    <section id="specs" class="band">
+      <div class="container">
+        <h2 class="sectionTitle">Specifications (placeholders)</h2>
+        <p class="sectionLead">
+          Keep these as placeholders until you lock the parts. Replace with exact part numbers and measurements later.
+        </p>
+
+        <div class="twoCol">
+          <div class="specLine">
+            <span class="specLine__k">Raspberry Pi</span>
+            <span class="specLine__v">Placeholder (model + RAM)</span>
+          </div>
+          <div class="specLine">
+            <span class="specLine__k">Power</span>
+            <span class="specLine__v">USB 5V (adapter placeholder)</span>
+          </div>
+          <div class="specLine">
+            <span class="specLine__k">Display</span>
+            <span class="specLine__v">2&quot; TFT (resolution placeholder)</span>
+          </div>
+          <div class="specLine">
+            <span class="specLine__k">Interface</span>
+            <span class="specLine__v">SPI / parallel (placeholder)</span>
+          </div>
+          <div class="specLine">
+            <span class="specLine__k">Audio amp</span>
+            <span class="specLine__v">Placeholder (wattage, input type)</span>
+          </div>
+          <div class="specLine">
+            <span class="specLine__k">Speaker</span>
+            <span class="specLine__v">Placeholder (size, impedance)</span>
+          </div>
+          <div class="specLine">
+            <span class="specLine__k">Enclosure</span>
+            <span class="specLine__v">Placeholder (material, volume)</span>
+          </div>
+          <div class="specLine">
+            <span class="specLine__k">Controls</span>
+            <span class="specLine__v">Buttons / encoder (placeholder)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTS / BOM (placeholder) -->
+    <section id="components" class="band">
+      <div class="container">
+        <h2 class="sectionTitle">Components (BOM placeholder)</h2>
+        <p class="sectionLead">
+          This is a placeholder list. Add part names, quantities, links, alternates, and notes when finalized.
+        </p>
+
+        <div class="bomList" role="list">
+          <div class="bomItem" role="listitem">
+            <div class="bomItem__name">Raspberry Pi</div>
+            <div class="bomItem__meta">Qty: — • Placeholder: model/ram • Notes: —</div>
+          </div>
+
+          <div class="bomItem" role="listitem">
+            <div class="bomItem__name">2&quot; TFT Display</div>
+            <div class="bomItem__meta">Qty: — • Placeholder: driver IC/interface • Notes: —</div>
+          </div>
+
+          <div class="bomItem" role="listitem">
+            <div class="bomItem__name">Audio Amplifier</div>
+            <div class="bomItem__meta">Qty: — • Placeholder: wattage/input • Notes: —</div>
+          </div>
+
+          <div class="bomItem" role="listitem">
+            <div class="bomItem__name">Speaker Driver</div>
+            <div class="bomItem__meta">Qty: — • Placeholder: size/impedance • Notes: —</div>
+          </div>
+
+          <div class="bomItem" role="listitem">
+            <div class="bomItem__name">Storage</div>
+            <div class="bomItem__meta">Qty: — • Placeholder: microSD/USB • Notes: —</div>
+          </div>
+
+          <div class="bomItem" role="listitem">
+            <div class="bomItem__name">Controls</div>
+            <div class="bomItem__meta">Qty: — • Placeholder: buttons/encoder • Notes: —</div>
+          </div>
+
+          <div class="bomItem" role="listitem">
+            <div class="bomItem__name">Power Adapter + Cable</div>
+            <div class="bomItem__meta">Qty: — • Placeholder: 5V rating/connector • Notes: —</div>
+          </div>
+
+          <div class="bomItem" role="listitem">
+            <div class="bomItem__name">Enclosure Hardware</div>
+            <div class="bomItem__meta">Qty: — • Placeholder: screws/inserts • Notes: —</div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          © <span id="year"></span> Mini TV Project • <a class="nav__link" href="index.html">Back to Home</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
