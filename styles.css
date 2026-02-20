@@ -19,7 +19,7 @@
   --tint2: rgba(0,0,0,0.04);
 
   /* GRID */
-  --grid-opacity: 0.12;        /* try 0.25 to test visibility */
+  --grid-opacity: 0.15;        /* try 0.25 to test visibility */
   --grid-size: 64px;
   --grid-line: rgba(0,0,0,var(--grid-opacity));
 }
@@ -428,4 +428,5 @@ body{
   *{ transition: none !important; }
 
 }
+
 
