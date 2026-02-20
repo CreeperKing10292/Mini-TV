@@ -47,8 +47,8 @@
           <p class="kicker">Hardware page</p>
           <h1 class="headline">Built on a Raspberry Pi</h1>
           <p class="subhead">
-            Mini TV is a plug-in device: the Pi boots directly into a fullscreen UI, reads a local library
-            (microSD/USB placeholder), and outputs audio to an amplifier + speaker. This page captures the
+            Mini TV is a plug-in device: the Pi boots directly into a fullscreen UI, reads a microSD local library
+            , and outputs audio to an amplifier + speaker. This page captures the
             hardware direction and decisions.
           </p>
 
@@ -82,19 +82,19 @@
           <div class="feature">
             <div class="feature__title">Compute</div>
             <div class="feature__text">
-              Placeholder: Pi model choice, OS image, kiosk boot, startup time goals.
+              Pi 5 (8GB), running Debian Trixie with minimal startup times.
             </div>
           </div>
           <div class="feature">
             <div class="feature__title">Display path</div>
             <div class="feature__text">
-              Placeholder: TFT driver/interface (SPI/parallel), mounting, brightness, viewing angle.
+              2" TFT Screen (128x160 Pixels) on SPI Interfacing.
             </div>
           </div>
           <div class="feature">
             <div class="feature__title">Audio path</div>
             <div class="feature__text">
-              Placeholder: DAC (optional) → amplifier → speaker; noise isolation + grounding notes.
+              microSD → Amplifier → Speaker.
             </div>
           </div>
         </div>
@@ -110,10 +110,10 @@
             Document tradeoffs early so the build stays consistent. Keep it simple, serviceable, and repeatable.
           </p>
           <ul class="bullets">
-            <li>Power: USB 5V (plug-in) — placeholder adapter rating and cable management</li>
-            <li>Thermals: airflow/venting and safe placement of the amplifier</li>
-            <li>Storage: microSD vs USB drive (library size and reliability)</li>
-            <li>Controls: buttons vs rotary encoder; debounce + ergonomics</li>
+            <li>Power: 27V input with clean ncable management</li>
+            <li>Thermals: equipped with a tiny but powerful CPU fan and heatsink to avoid any issues</li>
+            <li>Storage: microSD (16GB)</li>
+            <li>Controls: push buttons</li>
           </ul>
         </div>
 
@@ -131,9 +131,11 @@
     <!-- SPECS (placeholder) -->
     <section id="specs" class="band">
       <div class="container">
-        <h2 class="sectionTitle">Specifications (placeholders)</h2>
+        <h2 class="sectionTitle">Specifications</h2>
         <p class="sectionLead">
-          Keep these as placeholders until you lock the parts. Replace with exact part numbers and measurements later.
+          <div class="ctaRow">
+            <a class="btn" href="hardware.html">Specifications of hardware involved</a>
+          </div>
         </p>
 
         <div class="twoCol">
@@ -233,4 +235,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
